@@ -16,6 +16,8 @@ Exemple d'entrée:
  */
 
 function getMultiplesOf(numbers, n) {
+  let multiply = numbers.filter(number => number % n === 0)
+  return multiply
 }
 
 // Ne pas modifier l'export

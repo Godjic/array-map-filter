@@ -12,7 +12,15 @@ Tableau renvoyé par multiplyOddIndices:
   [3, 8, 11, 39, 19, 35]
 */
 
+
 function multiplyOddIndices(numbers) {
+  return numbers.map(function(number) {
+    if(numbers.indexOf(number) % 2 === 0) { //si l'index de number dans le tableau numbers est pair
+      return number; //return number
+    } else {
+      return number * numbers.indexOf(number) //number multiplité par son index
+    }
+  })
 }
 
 module.exports = multiplyOddIndices;

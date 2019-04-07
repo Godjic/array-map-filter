@@ -53,4 +53,5 @@ Sortie attendue:
 function getStudentsPerCurriculum(campuses, curriculumName) {
 }
 
+
 module.exports = getStudentsPerCurriculum;
